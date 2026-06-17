@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Miss Vee Perfume — Botanical Wellness & Self-Care</title>
   <meta name="description" content="Botanical Wellness & Self-Care — Miss Vee Perfume. Fragrance for your skin, scent for your space.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -15,223 +16,216 @@
       font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
       color: #2D3A2D;
       background: #FDF8F0;
-      line-height: 1.7;
+      line-height: 1.8;
       -webkit-font-smoothing: antialiased;
     }
 
-    .wrapper {
-      max-width: 1200px;
+    .container {
+      width: 88%;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 0 2rem;
+      position: relative;
     }
 
     /* ── Top Bar ── */
     .top-bar {
       background: #2D3A2D;
-      color: #FDF8F0;
+      color: #D4E0D4;
       text-align: center;
-      padding: 0.5rem 1rem;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
+      padding: 0.55rem 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
+      font-weight: 400;
     }
 
-    /* ── Header / Nav ── */
+    /* ── Header ── */
     header {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid #E8E0D5;
+      padding: 1.25rem 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      border-bottom: 1px solid #E8E0D5;
     }
 
-    .logo {
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .logo-text {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 1.5rem;
-      font-weight: 600;
+      font-weight: 700;
       color: #2D3A2D;
       text-decoration: none;
       letter-spacing: 0.02em;
+      line-height: 1.2;
     }
 
-    .logo span { color: #C9A87C; }
+    .logo-text span {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C9A87C;
+      font-family: 'Open Sans', sans-serif;
+    }
 
     nav a {
       color: #2D3A2D;
       text-decoration: none;
-      margin-left: 2rem;
-      font-size: 0.85rem;
+      margin-left: 2.2rem;
+      font-size: 0.82rem;
       font-weight: 600;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      transition: color 0.2s;
+      transition: color 0.25s;
     }
 
     nav a:hover { color: #E87A4A; }
 
     /* ── Hero ── */
     .hero {
-      padding: 5rem 0 4rem;
+      position: relative;
+      height: 80vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      background: linear-gradient(180deg, #FDF8F0 0%, #F4F0E8 100%);
+      overflow: hidden;
+      background: #2D3A2D;
     }
 
-    .hero h1 {
+    .hero-img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(45,58,45,0.3) 0%, rgba(45,58,45,0.7) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+      padding: 2rem;
+    }
+
+    .hero-content h1 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 400;
-      color: #2D3A2D;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-content .subtitle {
+      font-size: 1.2rem;
+      color: #D4E0D4;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
       margin-bottom: 0.5rem;
-      line-height: 1.2;
     }
 
-    .hero .subtitle {
-      font-size: 1.1rem;
-      color: #6B9B8A;
-      margin-bottom: 2rem;
-      font-style: italic;
-    }
-
-    .hero .tagline {
+    .hero-content .tagline {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 1.6rem;
       font-style: italic;
-      color: #2D3A2D;
-      max-width: 600px;
-      margin: 0 auto 2rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2.25rem;
       line-height: 1.5;
     }
 
-    .hero .tagline em { color: #E87A4A; font-style: italic; }
+    .hero-content .tagline em {
+      color: #E87A4A;
+      font-style: italic;
+    }
 
     .hero-cta {
       display: inline-block;
       background: #E87A4A;
       color: #fff;
-      padding: 0.9rem 2.5rem;
-      border-radius: 0;
+      padding: 0.9rem 3rem;
       font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       text-decoration: none;
-      transition: background 0.2s;
+      transition: background 0.25s, transform 0.2s;
     }
 
-    .hero-cta:hover { background: #D46A3A; }
+    .hero-cta:hover {
+      background: #D46A3A;
+      transform: translateY(-1px);
+    }
 
     /* ── Sections ── */
-    section { padding: 4rem 0; }
+    .section { padding: 5rem 0; }
 
-    section:nth-child(even) { background: #F4F0E8; }
+    .section-alt { background: #F4F0E8; }
+
+    .section-dark {
+      background: #2D3A2D;
+      color: #FDF8F0;
+    }
 
     .section-title {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       font-weight: 400;
       color: #2D3A2D;
       text-align: center;
-      margin-bottom: 0.75rem;
+      line-height: 1.3;
     }
+
+    .section-title-light { color: #FDF8F0; }
 
     .section-subtitle {
       text-align: center;
-      color: #6B9B8A;
-      font-style: italic;
-      margin-bottom: 2.5rem;
       font-size: 1rem;
+      color: #6B9B8A;
+      font-weight: 300;
+      margin-top: 0.5rem;
+      margin-bottom: 2.5rem;
     }
 
-    .section-divider {
-      width: 60px;
+    .section-subtitle-light { color: #D4E0D4; }
+
+    .divider {
+      width: 50px;
       height: 2px;
       background: #E87A4A;
-      margin: 0 auto 2.5rem;
+      margin: 1rem auto 0.5rem;
     }
 
-    /* ── About Grid ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      max-width: 960px;
-      margin: 0 auto;
-    }
+    .divider-light { background: #C9A87C; }
 
-    .about-card {
-      background: #FDF8F0;
-      padding: 2.5rem;
-      border: 1px solid #E8E0D5;
-    }
-
-    .about-card h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.3rem;
-      font-weight: 400;
-      color: #E87A4A;
-      margin-bottom: 1rem;
-    }
-
-    .about-card p { color: #2D3A2D; font-size: 0.95rem; }
-
-    /* ── Repository Cards ── */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.5rem;
-      max-width: 960px;
-      margin: 0 auto;
-    }
-
-    .card {
-      background: #FDF8F0;
-      border: 1px solid #E8E0D5;
-      padding: 1.5rem;
-      transition: border-color 0.2s, transform 0.2s;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card:hover {
-      border-color: #C9A87C;
-      transform: translateY(-2px);
-    }
-
-    .card .card-icon {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-      color: #C9A87C;
-    }
-
-    .card h4 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #2D3A2D;
-      margin-bottom: 0.5rem;
-    }
-
-    .card p {
-      font-size: 0.85rem;
-      color: #6B9B8A;
-      flex: 1;
-    }
-
-    .card a {
-      color: #E87A4A;
-      text-decoration: none;
-      margin-top: 1rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-
-    .card a::after { content: " →"; }
-    .card a:hover { text-decoration: underline; }
-
-    /* ── Values ── */
-    .values-grid {
+    /* ── Product / Collection Grid ── */
+    .collection-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
@@ -239,57 +233,234 @@
       margin: 0 auto;
     }
 
-    .value-item {
-      text-align: center;
-      padding: 2rem;
+    .collection-card {
+      background: #FDF8F0;
+      border: 1px solid #E8E0D5;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+      display: flex;
+      flex-direction: column;
     }
 
-    .value-item .value-icon {
-      font-size: 2.5rem;
+    .collection-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(45,58,45,0.08);
+    }
+
+    .collection-card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .collection-card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collection-card-body h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 0.5rem;
+    }
+
+    .collection-card-body p {
+      font-size: 0.88rem;
+      color: #6B9B8A;
+      flex: 1;
+      line-height: 1.6;
+    }
+
+    .collection-card-body a {
+      color: #E87A4A;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .collection-card-body a::after { content: " \2192"; }
+    .collection-card-body a:hover { color: #D46A3A; }
+
+    /* ── Split Layout (Image + Text) ── */
+    .split {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    .split-image {
+      flex: 1;
+      min-height: 400px;
+      overflow: hidden;
+    }
+
+    .split-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .split-text {
+      flex: 1;
+      padding: 1rem 0;
+    }
+
+    .split-text h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .split-text .split-divider {
+      width: 50px;
+      height: 2px;
+      background: #E87A4A;
+      margin-bottom: 1.5rem;
+    }
+
+    .split-text p {
+      font-size: 0.95rem;
+      color: #2D3A2D;
+      line-height: 1.9;
       margin-bottom: 1rem;
+    }
+
+    .split-text p:last-child { margin-bottom: 0; }
+
+    .split-text .highlight {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #E87A4A;
+      line-height: 1.6;
+    }
+
+    /* ── Discover Grid ── */
+    .discover-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    .discover-tile {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      cursor: pointer;
+    }
+
+    .discover-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .discover-tile:hover img { transform: scale(1.08); }
+
+    .discover-tile-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(45,58,45,0.8));
+      padding: 1.5rem 1rem 1rem;
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .discover-tile-label span {
+      display: block;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      opacity: 0.8;
+      margin-top: 0.2rem;
+    }
+
+    /* ── Values Section ── */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .value-item {
+      text-align: center;
+    }
+
+    .value-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      margin-bottom: 1.25rem;
     }
 
     .value-item h4 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 400;
       color: #2D3A2D;
       margin-bottom: 0.75rem;
     }
 
-    .value-item p { font-size: 0.9rem; color: #6B9B8A; }
+    .value-item p {
+      font-size: 0.9rem;
+      color: #6B9B8A;
+      line-height: 1.7;
+    }
 
     /* ── Newsletter ── */
     .newsletter {
-      background: #2D3A2D;
-      color: #FDF8F0;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 5rem 0;
     }
 
     .newsletter h2 {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 400;
-      margin-bottom: 0.75rem;
+      color: #FDF8F0;
+      margin-bottom: 0.5rem;
     }
 
     .newsletter p {
       color: #D4E0D4;
-      margin-bottom: 2rem;
       font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto 2rem;
     }
 
     .newsletter-form {
       display: flex;
-      max-width: 460px;
+      max-width: 480px;
       margin: 0 auto;
-      gap: 0;
     }
 
     .newsletter-form input {
       flex: 1;
-      padding: 0.9rem 1.2rem;
+      padding: 1rem 1.25rem;
       border: none;
       font-family: 'Open Sans', sans-serif;
       font-size: 0.9rem;
@@ -300,33 +471,33 @@
     .newsletter-form input::placeholder { color: #C9A87C; }
 
     .newsletter-form button {
-      padding: 0.9rem 2rem;
+      padding: 1rem 2.25rem;
       background: #E87A4A;
       color: #fff;
       border: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       cursor: pointer;
-      transition: background 0.2s;
+      transition: background 0.25s;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .newsletter-form button:hover { background: #D46A3A; }
 
     /* ── Footer ── */
     footer {
-      background: #2D3A2D;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 3rem 0 2rem;
+      background: #1E2A1E;
+      padding: 3.5rem 0 0;
     }
 
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 2rem;
-      max-width: 960px;
-      margin: 0 auto;
+      gap: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
     .footer-grid h5 {
@@ -334,67 +505,83 @@
       color: #FDF8F0;
       font-size: 0.9rem;
       font-weight: 400;
-      margin-bottom: 1rem;
-      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
-    .footer-grid p, .footer-grid a {
-      color: #D4E0D4;
+    .footer-grid p,
+    .footer-grid a {
+      color: #A8B8A8;
       font-size: 0.85rem;
       text-decoration: none;
       display: block;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s;
     }
 
     .footer-grid a:hover { color: #E87A4A; }
 
-    .footer-bottom {
-      text-align: center;
-      padding-top: 2rem;
-      margin-top: 2rem;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      color: #6B9B8A;
-      font-size: 0.8rem;
-    }
-
-    /* ── Social ── */
-    .social-links {
+    .footer-social {
       display: flex;
-      gap: 1rem;
-      margin-top: 0.5rem;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
     }
 
-    .social-links a {
-      display: inline-flex;
+    .footer-social a {
+      display: flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
-      border: 1px solid #D4E0D4;
-      color: #D4E0D4;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #A8B8A8;
+      font-size: 0.75rem;
+      font-weight: 600;
       text-decoration: none;
-      font-size: 1rem;
-      transition: all 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.25s;
     }
 
-    .social-links a:hover {
+    .footer-social a:hover {
       border-color: #E87A4A;
       color: #E87A4A;
     }
 
+    .footer-bottom {
+      text-align: center;
+      padding: 1.75rem 0;
+      color: #6B9B8A;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+    }
+
     /* ── Responsive ── */
+    @media (max-width: 1024px) {
+      .discover-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .hero .tagline { font-size: 1.2rem; }
-      .about-grid { grid-template-columns: 1fr; }
-      .values-grid { grid-template-columns: 1fr; }
+      .hero-content h1 { font-size: 2.5rem; }
+      .hero-content .tagline { font-size: 1.2rem; }
+      .split { flex-direction: column; gap: 2rem; }
+      .split-image { width: 100%; min-height: 280px; }
+      .split-text { text-align: center; }
+      .split-text .split-divider { margin: 0 auto 1.5rem; }
+      .collection-grid { grid-template-columns: repeat(2, 1fr); }
+      .values-grid { grid-template-columns: 1fr; max-width: 400px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      nav a { margin-left: 1rem; font-size: 0.75rem; }
+      nav a { margin-left: 1rem; font-size: 0.72rem; }
     }
 
     @media (max-width: 480px) {
-      header { flex-direction: column; gap: 1rem; }
-      nav a { margin: 0 0.75rem; }
+      header { flex-direction: column; gap: 1rem; text-align: center; }
+      nav a { margin: 0 0.6rem; font-size: 0.7rem; }
+      .hero { height: 70vh; min-height: 400px; }
+      .hero-content h1 { font-size: 2rem; }
+      .collection-grid { grid-template-columns: 1fr; }
+      .discover-grid { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
       .newsletter-form { flex-direction: column; }
     }
@@ -402,14 +589,28 @@
 </head>
 <body>
 
-  <div class="top-bar">Fragrance for your skin, scent for your space</div>
+  <!-- Top Bar -->
+  <div class="top-bar">Fragrance for your skin &bull; Scent for your space</div>
 
-  <div class="wrapper">
+  <!-- Header -->
+  <div class="container">
     <header>
-      <a href="/" class="logo">Miss Vee <span>Perfume</span></a>
+      <div class="logo-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=80&q=80&auto=format&fit=crop"
+          alt="Miss Vee Perfume"
+          class="logo-img"
+          loading="lazy"
+        >
+        <a href="/" class="logo-text">
+          Miss Vee
+          <span>Perfume</span>
+        </a>
+      </div>
       <nav>
         <a href="#about">About</a>
-        <a href="#documents">Documents</a>
+        <a href="#collection">Collection</a>
+        <a href="#discover">Discover</a>
         <a href="#values">Values</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -418,134 +619,246 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="wrapper">
-      <h1>Miss Vee Perfume</h1>
+    <img
+      src="https://images.unsplash.com/photo-1596018198069-c7c8ce2cdb42?w=1600&q=80&auto=format&fit=crop"
+      alt="Botanical wellness"
+      class="hero-img"
+      loading="lazy"
+    >
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
       <p class="subtitle">Botanical Wellness &amp; Self-Care</p>
-      <p class="tagline">&ldquo;Self-Care is You. In Your Home.<br>In Your <em>Sanctuary</em>.&rdquo;</p>
-      <a href="#documents" class="hero-cta">Explore the Project</a>
+      <h1>Miss Vee Perfume</h1>
+      <p class="tagline">&ldquo;Self-Care is You. In Your Home. In Your <em>Sanctuary</em>.&rdquo;</p>
+      <a href="#collection" class="hero-cta">Explore Our Collection</a>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about">
-    <div class="wrapper">
-      <h2 class="section-title">About the Brand</h2>
-      <div class="section-divider"></div>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Miss Vee</h2>
+      <div class="divider"></div>
       <p class="section-subtitle">A lady-owned start-up based in Ekurhuleni, Gauteng, South Africa</p>
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>The Project</h3>
-          <p>Fragrance eCommerce website for Miss Vee Perfume &mdash; selling personal perfumes and home diffusers. A space for botanical wellness and sensory self-care.</p>
+
+      <div class="split">
+        <div class="split-text">
+          <h2>The Brand</h2>
+          <div class="split-divider"></div>
+          <p>Miss Vee Perfume is a fragrance eCommerce brand selling personal perfumes and home diffusers. A space for botanical wellness and sensory self-care, rooted in the belief that fragrance is more than scent&mdash;it is ritual, memory, and sanctuary.</p>
+          <p>Inspired by the calming aesthetic of Sanctuary Spa, the Miss Vee experience brings that same warm, nurturing feeling to your home. Every product is crafted to transform any room into a personal retreat.</p>
+          <p class="highlight">Fragrance for your skin, scent for your space.</p>
         </div>
-        <div class="about-card">
-          <h3>Design Inspiration</h3>
-          <p>Sanctuary Spa (uk.sanctuary.com). Calming, botanical, wellness-focused sensory design with a warm, nurturing aesthetic. Bringing that same sanctuary feeling to your home.</p>
+        <div class="split-image">
+          <img
+            src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80&auto=format&fit=crop"
+            alt="Perfume collection"
+            loading="lazy"
+          >
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Repository Documents -->
-  <section id="documents" style="background: #F4F0E8;">
-    <div class="wrapper">
-      <h2 class="section-title">Repository Contents</h2>
-      <div class="section-divider"></div>
-      <p class="section-subtitle">Explore the project planning, brand assets, and content</p>
-      <div class="cards-grid">
+  <!-- Collection -->
+  <section id="collection" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Our Collection</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Explore the project documents and brand assets</p>
 
-        <div class="card">
-          <div class="card-icon">&#9776;</div>
-          <h4>README</h4>
-          <p>Project overview and getting started guide</p>
-          <a href="README.md">Read more</a>
+      <div class="collection-grid">
+
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=400&q=80&auto=format&fit=crop" alt="README" loading="lazy">
+          <div class="collection-card-body">
+            <h4>README</h4>
+            <p>Project overview and getting started guide</p>
+            <a href="README.md">Read more</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128196;</div>
-          <h4>Project Design Requirement</h4>
-          <p>Full PDR document outlining the project scope and goals</p>
-          <a href="planning/01-project-design-requirement.md">Open</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80&auto=format&fit=crop" alt="Project Design" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Project Design Requirement</h4>
+            <p>Full PDR document outlining the project scope and goals</p>
+            <a href="planning/01-project-design-requirement.md">Open</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128161;</div>
-          <h4>Concept Comparison</h4>
-          <p>Concept One vs Concept Two analysis</p>
-          <a href="planning/02-concept-comparison.md">Open</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=400&q=80&auto=format&fit=crop" alt="Concepts" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Concept Comparison</h4>
+            <p>Concept One vs Concept Two analysis</p>
+            <a href="planning/02-concept-comparison.md">Open</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#127912;</div>
-          <h4>Brand Colours</h4>
-          <p>Colour palette with hex codes and usage notes</p>
-          <a href="assets/brand-colours.md">View palette</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=400&q=80&auto=format&fit=crop" alt="Brand Colours" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Brand Colours</h4>
+            <p>Colour palette with hex codes and usage notes</p>
+            <a href="assets/brand-colours.md">View palette</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128214;</div>
-          <h4>Typography</h4>
-          <p>Font pairings, hierarchy, and sizing</p>
-          <a href="assets/typography.md">View fonts</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1550645612-83f5d594b671?w=400&q=80&auto=format&fit=crop" alt="Typography" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Typography</h4>
+            <p>Font pairings, hierarchy, and sizing</p>
+            <a href="assets/typography.md">View fonts</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128221;</div>
-          <h4>Taglines &amp; Copy</h4>
-          <p>Brand messaging and voice guidelines</p>
-          <a href="assets/taglines-and-copy.md">Read copy</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80&auto=format&fit=crop" alt="Taglines" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Taglines &amp; Copy</h4>
+            <p>Brand messaging and voice guidelines</p>
+            <a href="assets/taglines-and-copy.md">Read copy</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128247;</div>
-          <h4>Image References</h4>
-          <p>Curated Unsplash search terms for imagery</p>
-          <a href="assets/unsplash-image-references.md">Browse</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&q=80&auto=format&fit=crop" alt="Image References" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Image References</h4>
+            <p>Curated Unsplash search terms for imagery</p>
+            <a href="assets/unsplash-image-references.md">Browse</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128100;</div>
-          <h4>About Miss Vee</h4>
-          <p>Brand story and founder narrative</p>
-          <a href="content/about-miss-vee.md">Read story</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80&auto=format&fit=crop" alt="About Miss Vee" loading="lazy">
+          <div class="collection-card-body">
+            <h4>About Miss Vee</h4>
+            <p>Brand story and founder narrative</p>
+            <a href="content/about-miss-vee.md">Read story</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#127807;</div>
-          <h4>Scent &amp; Wellness Guide</h4>
-          <p>Four guide articles on fragrance and wellness</p>
-          <a href="content/scent-wellness-guide.md">Explore</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80&auto=format&fit=crop" alt="Scent Guide" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Scent &amp; Wellness Guide</h4>
+            <p>Four guide articles on fragrance and wellness</p>
+            <a href="content/scent-wellness-guide.md">Explore</a>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">&#128203;</div>
-          <h4>Product Template</h4>
-          <p>Sensory copy framework for product descriptions</p>
-          <a href="content/product-description-template.md">View template</a>
+        <div class="collection-card">
+          <img class="collection-card-img" src="https://images.unsplash.com/photo-1614854262318-831574f15f1f?w=400&q=80&auto=format&fit=crop" alt="Product Template" loading="lazy">
+          <div class="collection-card-body">
+            <h4>Product Template</h4>
+            <p>Sensory copy framework for product descriptions</p>
+            <a href="content/product-description-template.md">View template</a>
+          </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Discover -->
+  <section id="discover" class="section">
+    <div class="container">
+      <h2 class="section-title">Discover Miss Vee</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Explore the world of botanical fragrance and self-care</p>
+
+      <div class="discover-grid">
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=600&q=80&auto=format&fit=crop" alt="Botanical" loading="lazy">
+          <div class="discover-tile-label">
+            Botanical<br><span>Nature-inspired scents</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd52d2c5?w=600&q=80&auto=format&fit=crop" alt="Candle" loading="lazy">
+          <div class="discover-tile-label">
+            Home Diffusers<br><span>Scent for your space</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80&auto=format&fit=crop" alt="Wellness" loading="lazy">
+          <div class="discover-tile-label">
+            Personal Perfumes<br><span>Fragrance for your skin</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=600&q=80&auto=format&fit=crop" alt="Self Care" loading="lazy">
+          <div class="discover-tile-label">
+            Self-Care Rituals<br><span>Wellness through scent</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1592950638375-5a6c17f7b88f?w=600&q=80&auto=format&fit=crop" alt="Spa" loading="lazy">
+          <div class="discover-tile-label">
+            Wellness Guide<br><span>Mindful living</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=600&q=80&auto=format&fit=crop" alt="Aromatherapy" loading="lazy">
+          <div class="discover-tile-label">
+            Aromatherapy<br><span>Essential blends</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=600&q=80&auto=format&fit=crop" alt="Nature" loading="lazy">
+          <div class="discover-tile-label">
+            Natural Ingredients<br><span>Rooted in nature</span>
+          </div>
+        </div>
+        <div class="discover-tile">
+          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80&auto=format&fit=crop" alt="Bath" loading="lazy">
+          <div class="discover-tile-label">
+            Sensory Experiences<br><span>Moments of peace</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Values -->
-  <section id="values">
-    <div class="wrapper">
-      <h2 class="section-title">Our Approach</h2>
-      <div class="section-divider"></div>
+  <section id="values" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Our Values</h2>
+      <div class="divider"></div>
       <p class="section-subtitle">Rooted in nature, designed for wellbeing</p>
+
+      <div class="split" style="margin-bottom: 3rem;">
+        <div class="split-image">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80&auto=format&fit=crop"
+            alt="Wellness and self-care"
+            loading="lazy"
+          >
+        </div>
+        <div class="split-text">
+          <h2>Our Approach</h2>
+          <div class="split-divider"></div>
+          <p>At Miss Vee, we believe that fragrance is a powerful tool for wellbeing. Every scent we create is designed to bring moments of calm, joy, and presence into your daily life.</p>
+          <p class="highlight">Your home, your space, your sanctuary.</p>
+        </div>
+      </div>
+
       <div class="values-grid">
         <div class="value-item">
-          <div class="value-icon">&#127800;</div>
+          <img src="https://images.unsplash.com/photo-1532264523420-128a3efbdf46?w=400&q=80&auto=format&fit=crop" alt="Botanical" loading="lazy">
           <h4>Botanical</h4>
           <p>Inspired by nature, crafted with care. Every scent tells a story rooted in the natural world.</p>
         </div>
         <div class="value-item">
-          <div class="value-icon">&#129717;</div>
+          <img src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?w=400&q=80&auto=format&fit=crop" alt="Wellness" loading="lazy">
           <h4>Wellness</h4>
           <p>Fragrance as self-care. Creating moments of peace and presence in your daily ritual.</p>
         </div>
         <div class="value-item">
-          <div class="value-icon">&#127968;</div>
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400&q=80&auto=format&fit=crop" alt="Sanctuary" loading="lazy">
           <h4>Sanctuary</h4>
           <p>Your home, your space, your sanctuary. Scent that transforms any room into a retreat.</p>
         </div>
@@ -554,9 +867,10 @@
   </section>
 
   <!-- Newsletter -->
-  <section class="newsletter" id="contact">
-    <div class="wrapper">
+  <section id="contact" class="section section-dark newsletter">
+    <div class="container">
       <h2>Stay Connected</h2>
+      <div class="divider divider-light"></div>
       <p>Follow the journey of Miss Vee Perfume. Sign up for updates on our launch and upcoming collections.</p>
       <form class="newsletter-form">
         <input type="email" placeholder="Your email address" required>
@@ -567,16 +881,17 @@
 
   <!-- Footer -->
   <footer>
-    <div class="wrapper">
+    <div class="container">
       <div class="footer-grid">
         <div>
           <h5>Miss Vee Perfume</h5>
-          <p>Botanical Wellness &amp; Self-Care.<br>Fragrance for your skin, scent for your space.</p>
+          <p>Botanical Wellness &amp; Self-Care. Fragrance for your skin, scent for your space. A lady-owned start-up based in Ekurhuleni, Gauteng, South Africa.</p>
         </div>
         <div>
           <h5>Explore</h5>
           <a href="#about">About</a>
-          <a href="#documents">Documents</a>
+          <a href="#collection">Collection</a>
+          <a href="#discover">Discover</a>
           <a href="#values">Values</a>
         </div>
         <div>
@@ -584,12 +899,14 @@
           <a href="planning/01-project-design-requirement.md">PDR</a>
           <a href="assets/brand-colours.md">Brand Colours</a>
           <a href="assets/typography.md">Typography</a>
+          <a href="content/about-miss-vee.md">Brand Story</a>
         </div>
         <div>
           <h5>Connect</h5>
-          <div class="social-links">
+          <div class="footer-social">
             <a href="#" aria-label="Instagram">Ig</a>
             <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Pinterest">Pi</a>
             <a href="#" aria-label="Email">@</a>
           </div>
         </div>
