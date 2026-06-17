@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Miss Vee Perfume. Get in touch with us. Based in Ekurhuleni, Gauteng, South Africa.">
+  <title>Contact — Miss Vee Perfume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      color: #2D3A2D;
+      background: #FDF8F0;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .demo-notice {
+      background: #E87A4A;
+      color: #fff;
+      text-align: center;
+      padding: 0.55rem 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    header {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #E8E0D5;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2D3A2D;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C9A87C;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    nav a {
+      color: #2D3A2D;
+      text-decoration: none;
+      margin-left: 2.2rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.25s;
+    }
+
+    nav a:hover { color: #E87A4A; }
+    nav a.active { color: #E87A4A; }
+
+    .page-header {
+      padding: 4rem 0 2rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      color: #6B9B8A;
+      font-size: 1rem;
+    }
+
+    .contact-section {
+      padding: 2rem 0 4rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #2D3A2D;
+      margin-bottom: 0.35rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9rem;
+      border: 1px solid #E8E0D5;
+      background: #FDF8F0;
+      color: #2D3A2D;
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #E87A4A;
+      color: #fff;
+      padding: 0.85rem 2.5rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.25s;
+      border: none;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .btn:hover { background: #D46A3A; }
+
+    .faq-box {
+      margin-top: 2rem;
+      padding: 2rem;
+      border: 1px solid #E8E0D5;
+      background: #F4F0E8;
+    }
+
+    .faq-box h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 1.25rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+
+    .faq-item:last-child { margin-bottom: 0; }
+
+    .faq-item p:first-child {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #2D3A2D;
+      margin-bottom: 0.25rem;
+    }
+
+    .faq-item p:last-child {
+      font-size: 0.88rem;
+      color: #6B9B8A;
+    }
+
+    .contact-info h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .contact-info-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .contact-info-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #C9A87C;
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-info-value {
+      font-size: 0.95rem;
+      color: #2D3A2D;
+    }
+
+    .shipping-box {
+      margin-top: 2rem;
+      padding: 2rem;
+      border: 1px solid #E8E0D5;
+      background: #F4F0E8;
+    }
+
+    .shipping-box h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 0.75rem;
+    }
+
+    .shipping-box p {
+      font-size: 0.88rem;
+      color: #6B9B8A;
+      margin-bottom: 0.5rem;
+    }
+
+    .shipping-box p:last-child { margin-bottom: 0; }
+
+    .newsletter {
+      background: #2D3A2D;
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .newsletter h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #FDF8F0;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter p {
+      color: #D4E0D4;
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem 1.25rem;
+      border: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9rem;
+      background: #FDF8F0;
+      color: #2D3A2D;
+    }
+
+    .newsletter-form input::placeholder { color: #C9A87C; }
+
+    .newsletter-form button {
+      padding: 1rem 2.25rem;
+      background: #E87A4A;
+      color: #fff;
+      border: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.25s;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .newsletter-form button:hover { background: #D46A3A; }
+
+    footer {
+      background: #1E2A1E;
+      padding: 3.5rem 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-grid h5 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: #FDF8F0;
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: #A8B8A8;
+      font-size: 0.85rem;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .footer-grid a:hover { color: #E87A4A; }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #A8B8A8;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.25s;
+    }
+
+    .footer-social a:hover {
+      border-color: #E87A4A;
+      color: #E87A4A;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 1.75rem 0;
+      color: #6B9B8A;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      nav a { margin-left: 1rem; font-size: 0.72rem; }
+    }
+
+    @media (max-width: 480px) {
+      header { flex-direction: column; gap: 1rem; text-align: center; }
+      nav a { margin: 0 0.6rem; font-size: 0.7rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-notice"><strong>Design Prototype</strong> — This is a visual mockup for client approval. Not a live store.</div>
+
+  <div class="container">
+    <header>
+      <div class="logo-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=80&q=80&auto=format&fit=crop"
+          alt="Miss Vee Perfume"
+          class="logo-img"
+          loading="lazy"
+        >
+        <a href="index.html" class="logo-text">
+          Miss Vee
+          <span>Perfume</span>
+        </a>
+      </div>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="scent-guide.html">Scent Guide</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Got a question, need a recommendation, or just want to say hi. We are all ears.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div>
+          <form class="contact-form" onsubmit="event.preventDefault();alert('Thank you for your message! Miss Vee will get back to you soon. (This is a prototype.)');this.reset();">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option>General Inquiry</option>
+                <option>Product Question</option>
+                <option>Order Support</option>
+                <option>Wholesale</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" required placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+
+          <div class="faq-box">
+            <h4>FAQ</h4>
+            <div class="faq-item">
+              <p>Do you deliver outside Gauteng?</p>
+              <p>Yes! We deliver nationwide via courier. Delivery takes 2–5 business days.</p>
+            </div>
+            <div class="faq-item">
+              <p>What is your return policy?</p>
+              <p>We accept returns within 14 days of delivery. Products must be unused and in original packaging.</p>
+            </div>
+            <div class="faq-item">
+              <p>Do you offer gift wrapping?</p>
+              <p>Absolutely! All orders are beautifully packaged. Just let us know in the order notes if it is a gift.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">Ekurhuleni, Gauteng, South Africa</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">hello@missveeperfume.co.za</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📱</div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value">[Client to provide]</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📷</div>
+            <div>
+              <div class="contact-info-label">Follow Us</div>
+              <div class="contact-info-value">Instagram · Facebook · TikTok</div>
+            </div>
+          </div>
+
+          <div class="shipping-box">
+            <h4>Shipping Information</h4>
+            <p>We deliver to all major areas in Gauteng and nationwide.</p>
+            <p><strong>Standard delivery:</strong> 2–5 business days, R65</p>
+            <p><strong>Free delivery:</strong> On orders over R500</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Inspired</h2>
+      <div style="width:50px;height:2px;background:#C9A87C;margin:0.75rem auto 1.5rem;"></div>
+      <p>Get fragrance tips, new launch alerts, and 10% off your first order.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();alert('Thank you for subscribing! (This is a prototype.)');this.reset();">
+        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h5>Miss Vee Perfume</h5>
+          <p>Premium fragrances for your skin and your home. Lady-owned and based in Ekurhuleni, Gauteng, South Africa.</p>
+        </div>
+        <div>
+          <h5>Shop</h5>
+          <a href="shop.html">All Products</a>
+          <a href="shop.html">Perfumes</a>
+          <a href="shop.html">Diffusers</a>
+        </div>
+        <div>
+          <h5>Learn</h5>
+          <a href="about.html">About Us</a>
+          <a href="scent-guide.html">Scent Guide</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Pinterest">Pi</a>
+            <a href="#" aria-label="Email">@</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Miss Vee Perfume. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
