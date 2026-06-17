@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Miss Vee Perfume Scent Guide. Learn how to choose a perfume, how to use a diffuser, and understand scent families.">
+  <title>Scent Guide — Miss Vee Perfume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      color: #2D3A2D;
+      background: #FDF8F0;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .demo-notice {
+      background: #E87A4A;
+      color: #fff;
+      text-align: center;
+      padding: 0.55rem 1rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .header-wrap {
+      width: 88%;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #E8E0D5;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2D3A2D;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C9A87C;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    nav a {
+      color: #2D3A2D;
+      text-decoration: none;
+      margin-left: 2.2rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.25s;
+    }
+
+    nav a:hover { color: #E87A4A; }
+    nav a.active { color: #E87A4A; }
+
+    .page-header {
+      padding: 4rem 0 2rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header p {
+      color: #6B9B8A;
+      font-size: 1rem;
+    }
+
+    .scent-guide {
+      padding: 2rem 0 4rem;
+    }
+
+    .guide-article h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #2D3A2D;
+      margin: 2.5rem 0 0.75rem;
+      padding-top: 0.5rem;
+    }
+
+    .guide-article h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .guide-article h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #2D3A2D;
+      margin: 1.5rem 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .guide-article p {
+      font-size: 0.95rem;
+      color: #2D3A2D;
+      line-height: 1.9;
+      margin-bottom: 1rem;
+    }
+
+    .guide-article ul {
+      margin: 0.5rem 0 1.5rem 1.5rem;
+    }
+
+    .guide-article li {
+      font-size: 0.95rem;
+      color: #2D3A2D;
+      line-height: 1.9;
+      margin-bottom: 0.35rem;
+    }
+
+    .guide-article li strong {
+      color: #E87A4A;
+    }
+
+    .newsletter {
+      background: #2D3A2D;
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .newsletter h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: #FDF8F0;
+      margin-bottom: 0.5rem;
+    }
+
+    .newsletter p {
+      color: #D4E0D4;
+      font-size: 0.95rem;
+      max-width: 520px;
+      margin: 0 auto 2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem 1.25rem;
+      border: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9rem;
+      background: #FDF8F0;
+      color: #2D3A2D;
+    }
+
+    .newsletter-form input::placeholder { color: #C9A87C; }
+
+    .newsletter-form button {
+      padding: 1rem 2.25rem;
+      background: #E87A4A;
+      color: #fff;
+      border: none;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.25s;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .newsletter-form button:hover { background: #D46A3A; }
+
+    footer {
+      background: #1E2A1E;
+      padding: 3.5rem 0 0;
+    }
+
+    .footer-wrap {
+      width: 88%;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .footer-grid h5 {
+      font-family: 'Playfair Display', Georgia, serif;
+      color: #FDF8F0;
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: #A8B8A8;
+      font-size: 0.85rem;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .footer-grid a:hover { color: #E87A4A; }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #A8B8A8;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.25s;
+    }
+
+    .footer-social a:hover {
+      border-color: #E87A4A;
+      color: #E87A4A;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 1.75rem 0;
+      color: #6B9B8A;
+      font-size: 0.8rem;
+      letter-spacing: 0.03em;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      nav a { margin-left: 1rem; font-size: 0.72rem; }
+    }
+
+    @media (max-width: 480px) {
+      header { flex-direction: column; gap: 1rem; text-align: center; }
+      nav a { margin: 0 0.6rem; font-size: 0.7rem; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .newsletter-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-notice"><strong>Design Prototype</strong> — This is a visual mockup for client approval. Not a live store.</div>
+
+  <div class="header-wrap">
+    <header>
+      <div class="logo-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=80&q=80&auto=format&fit=crop"
+          alt="Miss Vee Perfume"
+          class="logo-img"
+          loading="lazy"
+        >
+        <a href="index.html" class="logo-text">
+          Miss Vee
+          <span>Perfume</span>
+        </a>
+      </div>
+      <nav>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="scent-guide.html" class="active">Scent Guide</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Scent Guide</h1>
+      <p>Everything you need to know about choosing and using your Miss Vee fragrances.</p>
+    </div>
+  </section>
+
+  <section class="scent-guide">
+    <div class="container">
+      <div class="guide-article">
+
+        <h2>How to Choose a Perfume</h2>
+        <p>Finding a perfume that works for you takes a bit of trial and error. The same scent can smell completely different on two people. Here is how to find yours:</p>
+
+        <h3>1. Understand Scent Families</h3>
+        <p>Fragrances generally fall into these families:</p>
+        <ul>
+          <li><strong>Floral:</strong> Rose, jasmine, lavender. Romantic and timeless.</li>
+          <li><strong>Oriental:</strong> Amber, vanilla, musk. Warm and sensual.</li>
+          <li><strong>Fresh:</strong> Citrus, green notes, aquatic. Light and energising.</li>
+          <li><strong>Woody:</strong> Sandalwood, cedar, oud. Grounded and earthy.</li>
+        </ul>
+
+        <h3>2. Consider the Occasion</h3>
+        <p>Think about when and where you will wear it. Light fresh scents like Citrus Bloom work well for daytime and the office. Richer scents like Amber Nights suit evenings and special occasions. Velvet Rose sits somewhere in the middle — an everyday floral that works any time.</p>
+
+        <h3>3. Test on Your Skin</h3>
+        <p>Fragrances develop differently on everyone. The same perfume can smell different on your skin versus a friend's. Always test on your wrist and let it settle for a few minutes to experience the full journey from top to base notes.</p>
+
+        <h2>How to Use a Reed Diffuser</h2>
+        <p>Getting the most out of your Miss Vee home diffuser is simple:</p>
+        <ul>
+          <li><strong>Placement:</strong> Put your diffuser in a room with good airflow, away from direct sunlight and air conditioners.</li>
+          <li><strong>Activation:</strong> Insert the rattan reeds into the bottle. Flip them after the first hour for immediate scent.</li>
+          <li><strong>Maintenance:</strong> Flip the reeds every 1–2 weeks to refresh the scent intensity.</li>
+          <li><strong>Lifespan:</strong> A 200ml diffuser lasts approximately 8–12 weeks.</li>
+          <li><strong>Safety:</strong> Keep out of reach of children and pets. Avoid contact with polished surfaces.</li>
+        </ul>
+
+        <h2>Scent Families Explained</h2>
+
+        <h3>Floral Scents</h3>
+        <p>Floral scents are the most traditional category in perfumery, built around real flower extracts. Our Velvet Rose is a personal favourite.</p>
+
+        <h3>Warm &amp; Spicy Scents</h3>
+        <p>Warm, cosy, and a little bit addictive. Think amber, vanilla, cardamom, saffron. Amber Nights is exactly this — like a blanket you can wear.</p>
+
+        <h3>Fresh Scents</h3>
+        <p>Clean, bright, and energising. These are your citrus, green, and watery notes. Citrus Bloom is exactly what it sounds like — morning energy in a bottle.</p>
+
+        <h2>Tips for Making Your Fragrance Last</h2>
+        <ul>
+          <li>Apply perfume to pulse points — wrists, neck, behind ears, and inside elbows.</li>
+          <li>Moisturise your skin before applying — fragrance lasts longer on hydrated skin.</li>
+          <li>Don't rub your wrists together — this breaks down the scent molecules.</li>
+          <li>Store perfumes in a cool, dark place away from sunlight.</li>
+          <li>Layer your scent — use the matching diffuser in your home to surround yourself.</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Inspired</h2>
+      <div style="width:50px;height:2px;background:#C9A87C;margin:0.75rem auto 1.5rem;"></div>
+      <p>Get fragrance tips, new launch alerts, and 10% off your first order.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault();alert('Thank you for subscribing! (This is a prototype.)');this.reset();">
+        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-grid">
+        <div>
+          <h5>Miss Vee Perfume</h5>
+          <p>Premium fragrances for your skin and your home. Lady-owned and based in Ekurhuleni, Gauteng, South Africa.</p>
+        </div>
+        <div>
+          <h5>Shop</h5>
+          <a href="shop.html">All Products</a>
+          <a href="shop.html">Perfumes</a>
+          <a href="shop.html">Diffusers</a>
+        </div>
+        <div>
+          <h5>Learn</h5>
+          <a href="about.html">About Us</a>
+          <a href="scent-guide.html">Scent Guide</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Pinterest">Pi</a>
+            <a href="#" aria-label="Email">@</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Miss Vee Perfume. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
