@@ -73,5 +73,8 @@
     <p>The page you're looking for doesn't exist or has been moved. Let's get you back to our sanctuary.</p>
     <a href="index.html">Return Home</a>
   </div>
+<script>
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+</script>
 </body>
 </html>
